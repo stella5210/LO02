@@ -90,6 +90,7 @@ L'architecture du jeu est divisée en plusieurs modules principaux :
  ---
 ## 3.2 Diagramme de classes et relations
 Le diagramme UML des classes présente clairement les différents modules et leurs relations, par exemple :
+![UML Diagram](UML_new.drawio.png)
 
 ---
 # 4. Implémentation du code
