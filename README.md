@@ -93,11 +93,19 @@ Le diagramme UML des classes présente clairement les différents modules et leu
 ![UML Diagram](https://raw.githubusercontent.com/stella5210/LO02/main/UML_new.drawio.png)
 
 ---
-## 3.3 Diagramme de classes précédentes et raisons des modifications
-Voici le diagramme des classes de la version précédente du système, avec les raisons des changements appliqués :
+## 3.3 Diagramme des classes précédentes et raisons des modifications
+
+Voici le diagramme des classes de la version précédente du système, avec les raisons des changements appliqués :  
 ![UML Diagram](https://raw.githubusercontent.com/stella5210/LO02/main/UML_old.drawio.png)
-- **Modification des classes et des relations** :
-- **Raison de la modification** : Cette révision a permis de rendre le code plus modulaire et plus facile à maintenir, en séparant clairement les responsabilités de chaque classe.
+
+- **Partie modifiée : Faire de GameState un composant indépendant**  
+  **Raison de la modification :** Concevoir GameState comme un composant indépendant optimise la séparation des responsabilités du système, réduisant ainsi la complexité de GameManager. Cela permet à GameManager de se concentrer sur le contrôle des processus, tandis que GameState se charge du stockage et de la mise à jour de l'état. Cette amélioration renforce la modularité du code, tout en augmentant sa maintenabilité et son extensibilité. Si des ajustements de la logique de gestion de l'état sont nécessaires, il suffit de modifier GameState sans affecter GameManager. Le design global devient ainsi plus clair, mieux découplé et facilite les extensions et la maintenance future.
+
+- **Partie modifiée : Introduction de la classe ScoreView**  
+  **Raison de la modification :** Dans le nouveau diagramme, la classe ScoreView a été introduite et une relation d'association a été établie avec GameScore. La classe ScoreView est responsable de l'affichage visuel des scores du jeu, ce qui améliore la séparation des responsabilités du système. Ainsi, GameScore se concentre sur le calcul et le stockage des scores, tandis que ScoreView est dédiée à la présentation des données dans l'interface utilisateur.
+
+- **Partie modifiée : La classe SaveLoadSystem a été supprimée**  
+  **Raison de la modification :** Dans le diagramme final, la classe SaveLoadSystem a été retirée, ce qui indique que nous n'avons pas pu achever cette partie des fonctionnalités. À l'origine, cette classe était conçue pour gérer la sauvegarde et le chargement du jeu, en établissant une relation avec GameState. Elle devait être responsable de la sauvegarde de l'état actuel du jeu à un chemin spécifié et du chargement de l'état du jeu à partir d'une sauvegarde. En raison de contraintes de temps dans le projet, il n'a pas été possible de tout réaliser. Nous avons donc donné la priorité à d'autres fonctionnalités plus importantes et décidé de mettre de côté l'implémentation de SaveLoadSystem pour le moment.
 
 
 
