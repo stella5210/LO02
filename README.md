@@ -88,9 +88,18 @@ L'architecture du jeu est divisée en plusieurs modules principaux :
    - **Strategy** : Interface permettant aux joueurs ou aux joueurs virtuels de déterminer leur comportement et leurs choix stratégiques.
    - **AggressiveStrategy** et **DefensiveStrategy** : Représentent respectivement les stratégies d'attaque et de défense, utilisées par les joueurs virtuels pour prendre leurs décisions.
  ---
-## 3.2 Diagramme de classes et relations
-Le diagramme UML des classes présente clairement les différents modules et leurs relations, par exemple :
-![UML Diagram](UML_new.drawio.png)
+## 3.2 Diagramme de classes et relations (Actuel)
+Le diagramme UML des classes présente clairement les différents modules et leurs relations dans l'implémentation actuelle, par exemple :
+![UML Diagram](https://raw.githubusercontent.com/stella5210/LO02/main/UML_new.drawio.png)
+
+---
+## 3.3 Diagramme de classes précédentes et raisons des modifications
+Voici le diagramme des classes de la version précédente du système, avec les raisons des changements appliqués :
+![UML Diagram](https://raw.githubusercontent.com/stella5210/LO02/main/UML_old.drawio.png)
+- **Modification des classes et des relations** :
+- **Raison de la modification** : Cette révision a permis de rendre le code plus modulaire et plus facile à maintenir, en séparant clairement les responsabilités de chaque classe.
+
+
 
 ---
 # 4. Implémentation du code
